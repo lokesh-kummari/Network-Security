@@ -1,0 +1,43 @@
+2025-08-04 13:45:28,428 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-08-04 13:45:28,438 - dagshub - INFO - Accessing as klokesh5401
+2025-08-04 13:45:28,877 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/klokesh5401/Network-Security "HTTP/1.1 200 OK"
+2025-08-04 13:45:29,223 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-08-04 13:45:29,226 - dagshub - INFO - Initialized MLflow to track repo "klokesh5401/Network-Security"
+2025-08-04 13:45:29,226 - dagshub - INFO - Repository klokesh5401/Network-Security initialized!
+2025-08-04 13:45:29,227 - root - INFO - Initiate the data ingestion
+2025-08-04 13:45:34,986 - root - INFO - Performed train test split on the dataframe
+2025-08-04 13:45:34,986 - root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+2025-08-04 13:45:34,986 - root - INFO - Exporting train and test file path.
+2025-08-04 13:45:35,016 - root - INFO - Exported train and test file path.
+2025-08-04 13:45:35,016 - root - INFO - Data Initiation Completed
+2025-08-04 13:45:35,019 - root - INFO - Initiate the data Validation
+2025-08-04 13:45:35,029 - root - INFO - Data read successfully from train and test files.
+2025-08-04 13:45:35,029 - root - INFO - required number of columns: 2
+2025-08-04 13:45:35,029 - root - INFO - Data frame has 31 columns.
+2025-08-04 13:45:35,029 - root - ERROR - Number of columns validation failed. Expected: 2, Found: 31
+2025-08-04 13:45:35,029 - root - ERROR - Number of columns in train file Artifacts/08_04_2025_13_45_26/data_ingestion/ingested/train.csv is not as per schema.
+2025-08-04 13:45:35,029 - root - INFO - required number of columns: 2
+2025-08-04 13:45:35,029 - root - INFO - Data frame has 31 columns.
+2025-08-04 13:45:35,029 - root - ERROR - Number of columns validation failed. Expected: 2, Found: 31
+2025-08-04 13:45:35,029 - root - ERROR - Number of columns in test file Artifacts/08_04_2025_13_45_26/data_ingestion/ingested/test.csv is not as per schema.
+2025-08-04 13:45:35,029 - root - INFO - All required numerical columns exist.
+2025-08-04 13:45:35,029 - root - INFO - All required numerical columns exist.
+2025-08-04 13:45:35,082 - root - INFO - Drift report saved at Artifacts/08_04_2025_13_45_26/data_validation/drift_report/report.yaml
+2025-08-04 13:45:35,113 - root - INFO - data Validation Completed
+2025-08-04 13:45:35,113 - root - INFO - data Transformation started
+2025-08-04 13:45:35,113 - root - INFO - Entered initiate_data_transformation method of DataTransformation class
+2025-08-04 13:45:35,113 - root - INFO - Starting data transformation
+2025-08-04 13:45:35,124 - root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+2025-08-04 13:45:35,124 - root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+2025-08-04 13:45:35,128 - root - INFO - Entered the save_object method of MainUtils class
+2025-08-04 13:45:35,131 - root - INFO - Exited the save_object method of MainUtils class
+2025-08-04 13:45:35,131 - root - INFO - Entered the save_object method of MainUtils class
+2025-08-04 13:45:35,133 - root - INFO - Exited the save_object method of MainUtils class
+2025-08-04 13:45:35,133 - root - INFO - data Transformation completed
+2025-08-04 13:45:35,133 - root - INFO - Model Training sstared
+2025-08-04 13:47:42,611 - root - INFO - Entered the save_object method of MainUtils class
+2025-08-04 13:47:42,612 - root - INFO - Exited the save_object method of MainUtils class
+2025-08-04 13:47:42,612 - root - INFO - Entered the save_object method of MainUtils class
+2025-08-04 13:47:42,675 - root - INFO - Exited the save_object method of MainUtils class
+2025-08-04 13:47:42,675 - root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts/08_04_2025_13_45_26/model_trainer/trained_model/model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9915658977746165, precision_score=0.9912637139374239, recall_score=0.9918682659077048), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9718423169750603, precision_score=0.967948717948718, recall_score=0.975767366720517))
+2025-08-04 13:47:42,678 - root - INFO - Model Training artifact created

@@ -1,0 +1,39 @@
+2025-08-04 13:36:54,921 - httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+2025-08-04 13:36:55,279 - httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+2025-08-04 13:36:55,629 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-08-04 13:36:55,632 - dagshub - INFO - Accessing as klokesh5401
+2025-08-04 13:36:56,009 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/klokesh5401/Network-Security "HTTP/1.1 200 OK"
+2025-08-04 13:36:56,360 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-08-04 13:36:56,364 - dagshub - INFO - Initialized MLflow to track repo "klokesh5401/Network-Security"
+2025-08-04 13:36:56,364 - dagshub - INFO - Repository klokesh5401/Network-Security initialized!
+2025-08-04 13:36:56,365 - root - INFO - Initiate the data ingestion
+2025-08-04 13:37:02,114 - root - INFO - Performed train test split on the dataframe
+2025-08-04 13:37:02,115 - root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+2025-08-04 13:37:02,115 - root - INFO - Exporting train and test file path.
+2025-08-04 13:37:02,145 - root - INFO - Exported train and test file path.
+2025-08-04 13:37:02,145 - root - INFO - Data Initiation Completed
+2025-08-04 13:37:02,149 - root - INFO - Initiate the data Validation
+2025-08-04 13:37:02,160 - root - INFO - Data read successfully from train and test files.
+2025-08-04 13:37:02,161 - root - INFO - required number of columns: 2
+2025-08-04 13:37:02,161 - root - INFO - Data frame has 31 columns.
+2025-08-04 13:37:02,161 - root - ERROR - Number of columns validation failed. Expected: 2, Found: 31
+2025-08-04 13:37:02,161 - root - ERROR - Number of columns in train file Artifacts/08_04_2025_13_36_29/data_ingestion/ingested/train.csv is not as per schema.
+2025-08-04 13:37:02,161 - root - INFO - required number of columns: 2
+2025-08-04 13:37:02,161 - root - INFO - Data frame has 31 columns.
+2025-08-04 13:37:02,161 - root - ERROR - Number of columns validation failed. Expected: 2, Found: 31
+2025-08-04 13:37:02,161 - root - ERROR - Number of columns in test file Artifacts/08_04_2025_13_36_29/data_ingestion/ingested/test.csv is not as per schema.
+2025-08-04 13:37:02,161 - root - INFO - All required numerical columns exist.
+2025-08-04 13:37:02,161 - root - INFO - All required numerical columns exist.
+2025-08-04 13:37:02,215 - root - INFO - Drift report saved at Artifacts/08_04_2025_13_36_29/data_validation/drift_report/report.yaml
+2025-08-04 13:37:02,245 - root - INFO - data Validation Completed
+2025-08-04 13:37:02,245 - root - INFO - data Transformation started
+2025-08-04 13:37:02,245 - root - INFO - Entered initiate_data_transformation method of DataTransformation class
+2025-08-04 13:37:02,245 - root - INFO - Starting data transformation
+2025-08-04 13:37:02,254 - root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+2025-08-04 13:37:02,255 - root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+2025-08-04 13:37:02,261 - root - INFO - Entered the save_object method of MainUtils class
+2025-08-04 13:37:02,264 - root - INFO - Exited the save_object method of MainUtils class
+2025-08-04 13:37:02,264 - root - INFO - Entered the save_object method of MainUtils class
+2025-08-04 13:37:02,266 - root - INFO - Exited the save_object method of MainUtils class
+2025-08-04 13:37:02,266 - root - INFO - data Transformation completed
+2025-08-04 13:37:02,266 - root - INFO - Model Training sstared
